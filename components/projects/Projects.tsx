@@ -1,7 +1,7 @@
 "use client";
 
 import { Typography } from "@material-tailwind/react";
-import { ProjectCard } from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 const Project = () => {
   return (
@@ -26,16 +26,17 @@ const Project = () => {
           </Typography>
         </div>
       </div>
-      <div className="flex flex-row flex-wrap  md:gap-12 items-center justify-center  ">
+      {/* <div className="flex flex-row flex-wrap  md:gap-2 items-center justify-center  ">
         {(() => {
-          const cards = [];
+          //const cards = [];
 
-          for (let i = 0; i < 8; i++) {
-            cards.push(<ProjectCard />);
+          for (let i = 0; i < 8; i++) { 
+          
+            //cards.push(<ProjectCard />);
           }
-          return cards;
+          //return cards;
         })()}
-      </div>
+      </div> */}
     </main>
     
   );
