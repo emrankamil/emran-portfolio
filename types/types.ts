@@ -20,8 +20,7 @@ export interface ProjectData {
   background:any;
   description: string;
   techstacks: any;
-  website: string;
-  height: string;
+  github: string;
 }
 
 export interface testimonyData {

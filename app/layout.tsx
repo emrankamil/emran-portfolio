@@ -6,7 +6,7 @@ import {Providers} from "./Providers";
 import './globals.css'
 
 const nunito = Nunito({ subsets: ['latin'] })
-const background = " bg-[url('../public/img/full_background.jpg')] bg-cover bg-left"
+const background = " bg-gray-900"
 
 export const metadata: Metadata = {
   title: 'Emran Kamil- Full-Stack developer Online Portfolio',
@@ -21,11 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className + background}>
-        <Providers>
+        <div className="bg-[url('../public/img/full_background.jpg')] bg-cover bg-left">
+          <Providers>
           {children}
-        </Providers>
-        
-        {/* <BootstrapClient /> */}
+          </Providers>
+          {/* <BootstrapClient /> */}
+        </div> 
         </body>
     </html>
   )

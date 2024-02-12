@@ -28,7 +28,7 @@ const NavBar = ()=>{
     }, []);
     
     return (
-    <nav className="fixed top-0 w-full bg-opacity-15 backdrop-blur-sm z-10">
+    <nav className="fixed top-0 w-full bg-opacity-15 backdrop-blur-sm z-50">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
                 <div className={`relative flex h-16 items-center justify-between ${isMobileMenuOpen ? '' : 'sm:hidden'}`}>

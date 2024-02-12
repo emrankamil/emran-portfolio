@@ -1,11 +1,13 @@
 'use client'
 import Image from 'next/image'
 import MySkills from './MySkills';
+import GitHub from './GitHub';
 import person from '@/public/img/programmer.svg'
+
 import ReactMarkdown from 'react-markdown';
 
 
-const AboutUs = ()=> {
+const AboutMe = ()=> {
     return (
     <div className="flex flex-col py-12 bg-opacity-0 text-left">
         <div className="text-center " >
@@ -34,15 +36,14 @@ const AboutUs = ()=> {
             <div className=" basis-1/2 my-auto ">
                 <Image src={person} width={450} height={450} alt="card-image" />
             </div>
-                
-            
         
         </div>
 
         <MySkills/>
+        <GitHub/>
 
     </div>
     );
   }
 
-export default AboutUs
+export default AboutMe

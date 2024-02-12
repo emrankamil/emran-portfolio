@@ -1,15 +1,22 @@
-// Project.jsx
+
 import React from 'react';
 import projectData from '@/data/ProjectData';
 import { ProjectData } from '@/types/types';
-import ProjectCard from '@/components/projects/ProjectCard';
+import ProjectCard from './Card'
 
 const Project = () => {
   return (
-    <div className="">
-      <div className="h-64 mx-auto md:grid grid-cols-2 grid-rows-auto gap-4">
+    <div className="flex flex-col py-8">
+      <div className="text-center " >
+            <h1 className="text-gray-400 text-5xl font-bold p-4">PROJECTS</h1>
+            <p>Here you will find some of the personal and clients projects that I created with each project containing its own GitHub Link</p>
+        </div>
+      <div className="grid-cols-2 grid-rows-auto md:grid gap-2 mx-auto pt-3">
         {projectData.map((project: ProjectData) => (
-          <ProjectCard key={project.id} project={project} />
+          <div key={project.id} className="max-w-1/2 my-2 ">
+            <ProjectCard project={project} />
+
+          </div>
         ))}
       </div>
     </div>
