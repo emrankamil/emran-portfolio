@@ -23,14 +23,14 @@ export default function PorjectCard({ project }: { project: ProjectData }) {
             <div className="flex gap-3 items-end">
               <h1 className="font-serif text-2xl font-bold text-gray-900 shadow-xl ">{project.title}</h1>
               <a href={project.github} className="p-0 m-0">
-                <Button variant="gradient" placeholder={undefined} className="flex items-center gap-2 bg-black p-1 rounded-sm">
+                <Button variant="gradient" placeholder={undefined} className="flex items-center gap-2 text-xs bg-black p-1 rounded-sm">
                   <BsGithub className=""/>
                   Github
                 </Button>
                 </a> 
             </div>
             <h1 className="text-sm font-light text-gray-900 shadow-xl ">{project.description}</h1>          
-            <div className="flex gap-1 bg-transparent flex-wrap pt-1">
+            <div className="flex gap-1 bg-transparent flex-wrap pt-1 text-xs">
               <div className="bg-green-200 rounded">
                 <Tags color="BLUE" >{project.techstacks[0]}</Tags>
               </div>
