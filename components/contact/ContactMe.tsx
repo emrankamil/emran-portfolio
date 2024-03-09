@@ -62,7 +62,7 @@ const ContactMe = ()=>{
     };
 
     return (
-    <div className='flex flex-col gap-4 '>
+    <div id="contact" className='flex flex-col gap-4 '>
         
         <div className="text-center " >
             <h1 className="text-purple-300 text-5xl font-bold p-4">CONTACT ME</h1>
@@ -84,7 +84,6 @@ const ContactMe = ()=>{
                 <Button type='submit' value="Send"
                     className="text-white bg-transparent border-2 border-purple-300 shadow-purple-900 shadow-lg hover:shadow-xl font-semibold rounded-md text-sm px-4 py-3 flex gap-2 items-center justify-center w-full" placeholder={undefined}>
                     Send
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                 </Button>
                 
             </form>

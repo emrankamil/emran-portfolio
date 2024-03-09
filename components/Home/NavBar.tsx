@@ -54,7 +54,7 @@ const NavBar = ()=>{
 
                 <div className="flex items-center justify-between sm:items-stretch ">
                     <div className="">
-                        <a href="/"className="flex" >
+                        <a href="#home"className="flex" >
                             <Logo
                             icon={
                                 <svg
@@ -82,10 +82,10 @@ const NavBar = ()=>{
                         <div className="flex space-x-4">
                             {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                             
-                            <a href="#" className=" text-white rounded-md px-1 py-2 text-lg font-medium">About Me</a>
-                            <a href="#" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Projects</a>
-                            <a href="#" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Resume</a>
-                            <a href="#" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Contact Me</a>
+                            <a href="#about" className=" text-white rounded-md px-1 py-2 text-lg font-medium">About Me</a>
+                            <a href="#projects" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Projects</a>
+                            <a href="#resume" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Resume</a>
+                            <a href="#contact" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Contact Me</a>
 
                     </div>
                 </div>

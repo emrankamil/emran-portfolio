@@ -16,7 +16,7 @@ function Resume() {
   }, []);
 
   return (
-    <div className="py-8">
+    <div id="resume" className="py-8">
       <div className="flex flex-col">
         <div className="text-center ">
           <h1 className="text-purple-300 text-5xl font-bold p-4">Resume</h1>

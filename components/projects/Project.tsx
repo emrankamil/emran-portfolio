@@ -6,7 +6,7 @@ import ProjectCard from './Card'
 
 const Project = () => {
   return (
-    <div className="flex flex-col py-8">
+    <div id="projects" className="flex flex-col py-8">
       <div className="text-center " >
             <h1 className="text-gray-400 text-5xl font-bold p-4">PROJECTS</h1>
             <p>Here you will find some of the personal and clients projects that I created with each project containing its own GitHub Link</p>

@@ -9,7 +9,7 @@ import ReactMarkdown from 'react-markdown';
 
 const AboutMe = ()=> {
     return (
-    <div className="flex flex-col py-12 bg-opacity-0 text-left">
+    <div id="about" className="flex flex-col py-12 bg-opacity-0 text-left">
         <div className="text-center " >
             <h1 className="text-purple-300 text-5xl font-bold p-4">ABOUT ME</h1>
             <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
