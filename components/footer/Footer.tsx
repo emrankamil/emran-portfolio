@@ -17,8 +17,8 @@ export function FooterNew() {
         
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
-                      variant="small"
-                      className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0" placeholder={undefined}          >
+            variant="small"
+            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             &copy; {currentYear} <a href="https://material-tailwind.com/">Emran Kamil</a>.
           </Typography>
           <div className="flex space-x-4 my-4">
