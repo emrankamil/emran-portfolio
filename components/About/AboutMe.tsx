@@ -4,9 +4,6 @@ import MySkills from './MySkills';
 import GitHub from './GitHub';
 import person from '@/public/img/programmer.svg'
 
-import ReactMarkdown from 'react-markdown';
-
-
 const AboutMe = ()=> {
     return (
     <div id="about" className="flex flex-col py-12 bg-opacity-0 text-left">
@@ -23,7 +20,7 @@ const AboutMe = ()=> {
                     me!
                 </div>
                 <p className="mb-4"> I am passionate <strong className='text-purple-300'>Full-Stack developer</strong> and <strong className='text-purple-300'>Computer Engineer </strong>with expertise in building
-                    web applications using Python, Django, JavaScript, React.js, Next.js, and Express.js.
+                    web applications using Python, Django,Django rest-framework, JavaScript, React.js, Next.js, and Express.js.
                 </p>
                 <p className="mb-4"> I am commited to continuous learning. I am known for my strong <strong className='text-purple-300'>work ethics</strong>, team-oriented approach
                 and <strong className='text-purple-300'>problem-solving</strong> skills.
@@ -40,7 +37,7 @@ const AboutMe = ()=> {
         </div>
 
         <MySkills/>
-        <GitHub/>
+        {/* <GitHub/> */}
 
     </div>
     );

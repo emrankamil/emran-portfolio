@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Link from 'next/link'
 import { Button, Alert } from '@material-tailwind/react';
-
+import { Spinner } from "@material-tailwind/react";
 
 function Icon() {
     return (
@@ -38,18 +38,21 @@ const ContactMe = ()=>{
 
     const form: React.RefObject<HTMLFormElement> = useRef(null);
     const [result, showResult] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const sendEmail = (e:any) => {
         e.preventDefault();
+        setLoading(true);
 
         if (form.current) {
             emailjs
-                .sendForm('serve_1f8lepj', 'template_365ecqb', form.current, {
-                    publicKey: 'QXToY77Rfsvi-RS3v',
+                .sendForm('service_gr9yhzs', 'template_6qaz07e', form.current, {
+                    publicKey: 'uzApAR5mQL7BdFf3S',
                 })
                 .then(
                     () => {
                         showResult(true);
+                        setLoading(false);
                         // location.reload();
                     },
                     (error) => {
@@ -72,18 +75,18 @@ const ContactMe = ()=>{
         <div className="p-6 rounded-lg ">
             <h1 className="text-4xl font-bold py-6 text-left">Get <strong className="text-purple-300 font-semibold">In Touch</strong></h1>
             <form className="mt-8 space-y-4 mx-auto w-full sm:w-3/5" ref={form} onSubmit={sendEmail}>
-                <input type='text' name="user_name" placeholder='Full Name'
+                <input type='text' name="user_name" placeholder='Full Name' disabled={loading}
                     className="w-full rounded-md py-3 px-4 text-sm bg-transparent border-2 border-gray-300 shadow-lg shadow-purple-900 " required/>
-                <input type='email' name="user_email"  placeholder='Email'
+                <input type='email' name="user_email"  placeholder='Email' disabled={loading}
                     className="w-full rounded-md py-3 px-4 text-sm bg-transparent border-2 border-purple-300" required/>
-                <textarea name="message" placeholder='Message' rows={6}
+                <textarea name="message" placeholder='Message' rows={6} disabled={loading}
                     className="w-full rounded-md px-4 text-sm pt-3 bg-transparent border-2 border-purple-300" required></textarea>
                 <div>
                     {result ? <Result/> : null}
                 </div>
-                <Button type='submit' value="Send"
-                    className="text-white bg-transparent border-2 border-purple-300 shadow-purple-900 shadow-lg hover:shadow-xl font-semibold rounded-md text-sm px-4 py-3 flex gap-2 items-center justify-center w-full" placeholder={undefined}>
-                    Send
+                <Button type='submit' value="Send" disabled={loading}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+                    className="text-white bg-transparent border-2 border-purple-300 shadow-purple-900 shadow-lg hover:shadow-xl font-semibold rounded-md text-sm px-4 py-3 flex gap-2 items-center justify-center w-full">
+                    {loading ? 'Sending...' : 'Send'}
                 </Button>
                 
             </form>

@@ -21,17 +21,19 @@ export default function PorjectCard({ project }: { project: ProjectData }) {
         <div className=" gap-4 absolute bottom-0 z-20 m-0 pb-3 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
           <div>
             <div className="flex gap-3 items-end">
-              <h1 className="font-serif text-2xl font-bold text-gray-900 shadow-xl ">{project.title}</h1>
+              <div className=''>
+                <h1 className="font-serif text-2xl font-bold text-white shadow-xl">{project.title}</h1>
+              </div>
               <a href={project.github} className="p-0 m-0">
-                <Button variant="gradient" placeholder={undefined} className="flex items-center gap-2 text-xs bg-black p-1 rounded-sm">
+                <Button variant="gradient" placeholder={undefined} className="flex items-center gap-2 text-xs bg-black p-1 rounded-sm" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                   <BsGithub className=""/>
                   Github
                 </Button>
                 </a> 
             </div>
-            <h1 className="text-sm font-light text-gray-900 shadow-xl ">{project.description}</h1>          
+            <h1 className="text-sm text-gray-100 ">{project.description}</h1>          
             <div className="flex gap-1 bg-transparent flex-wrap pt-1 text-xs">
-              <div className="bg-green-200 rounded">
+              <div className="bg-gray-500 rounded">
                 <Tags color="BLUE" >{project.techstacks[0]}</Tags>
               </div>
               <div className="bg-red-700 rounded">
@@ -44,7 +46,10 @@ export default function PorjectCard({ project }: { project: ProjectData }) {
           </div>
           
           
+          
         </div>
+        <div className="z-10 absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
+        
         
       </div>
 

@@ -11,6 +11,7 @@ import { PiTelegramLogo } from "react-icons/pi";
 import { SiLeetcode } from "react-icons/si";
 import Link from 'next/link';
 
+
 const Heading = ()=>{
     return( 
         <section id="heading" className="w-full">
@@ -49,9 +50,11 @@ const Heading = ()=>{
                         </div>
 
                         <div className="pb-8">
-                        <Button variant="contained" className='bg-purple-300 hover:bg-purple-200 rounded-none font-bold text-black'>
-                            Hire Me
-                        </Button>
+                            <Link href={'#contact'}>
+                                <div className='bg-purple-300 hover:bg-purple-200 rounded-none font-bold text-black px-4 py-2 inline-block min-w-min'>
+                                    Hire Me
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     </div>  

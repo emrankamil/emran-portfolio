@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Nunito } from 'next/font/google'
+// import { Nunito } from 'next/font/google'
 import {Providers} from "./Providers";
 import './globals.css'
 
@@ -15,7 +15,7 @@ const montserat = local({
   variable: '--font-montserat',
 });  
 
-const nunito = Nunito({ subsets: ['latin'] })
+// const nunito = Nunito({ subsets: ['latin'] })
 
 const background = " bg-gray-900"
 
@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserat.variable} ${nunito.className} ${background}`}>
+      <body className={`${montserat.variable} ${background}`}>
         <div className="bg-[url('../public/img/full_background.jpg')] bg-cover bg-left">
           <Providers>
           {children}

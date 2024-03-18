@@ -1,5 +1,5 @@
 'use client'
-import {Logo} from 'astro-boilerplate-components';
+import {Logo} from './Logo';
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react';
 
@@ -43,7 +43,7 @@ const NavBar = ()=>{
                         <span className="sr-only">Open main menu</span>
                         {/* <!--Icon when menu is closed.*/}
                         <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                         {/* <!--Icon when menu is open. */}
                         <svg className="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -54,11 +54,11 @@ const NavBar = ()=>{
 
                 <div className="flex items-center justify-between sm:items-stretch ">
                     <div className="">
-                        <a href="#home"className="flex" >
+                        <a href="#heading"className="flex" >
                             <Logo
                             icon={
                                 <svg
-                                className="mr-1 h-10 w-10 stroke-blue-gray-300 text-cyan-600"
+                                className="mr-1 h-8 w-8 stroke-purple-300 text-cyan-600"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="none"

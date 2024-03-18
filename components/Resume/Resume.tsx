@@ -31,7 +31,7 @@ function Resume() {
 
         <div style={{ justifyContent: "center", position: "relative" }}>
           <a href="/EmranKamilResume.pdf" download="EmranKamilResume.pdf">
-            <Button variant="gradient" style={{ maxWidth: "250px" }} placeholder={undefined}>
+            <Button variant="gradient" style={{ maxWidth: "250px" }} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <AiOutlineDownload />
               Download CV
             </Button>

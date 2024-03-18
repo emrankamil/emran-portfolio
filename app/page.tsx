@@ -6,6 +6,7 @@ import SocialLinks from '@/components/SocialLinks'
 import ContactMe from '@/components/contact/ContactMe'
 import Footer from '@/components/footer/Footer'
 import Resume from '@/components/Resume/Resume'
+import TempResume from '@/components/Resume/TempResume'
 
 export default function Home() {
   return (
@@ -13,10 +14,11 @@ export default function Home() {
       <div className="md:w-4/5 mx-auto px-6 ">
         <NavBar/>
         <Heading/>
-        <SocialLinks/>
+        {/* <SocialLinks/> */}
         <AboutMe/>
         <Project/>
-        <Resume/>
+        <TempResume/>
+        {/* <Resume/> */}
         <ContactMe/>
       </div>
 

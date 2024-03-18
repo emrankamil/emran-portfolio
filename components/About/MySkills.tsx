@@ -41,7 +41,7 @@ const MySkills = ()=>{
                 <h4 className='p-1'>LANGUANGE AND TOOLS</h4>
                 <div className="flex flex-wrap">
                     {skillsData["languages"].map((data, index)=>(
-                        <Image width={75} height={75} src={data} alt={''} className="p-2"/>
+                        <Image key={index} width={75} height={75} src={data} alt={''} className="p-2"/>
                     ))}
                 </div>
                 <br></br>
@@ -50,7 +50,7 @@ const MySkills = ()=>{
                 <h4 className='p-1'>LIBRARIES AND FRAMEWORKS</h4>
                 <div className="flex flex-wrap">
                     {skillsData["frameworks"].map((data, index)=>(
-                        <Image width={100} height={100} src={data} alt={''} className="p-2"/>
+                        <Image key={index} width={100} height={100} src={data} alt={''} className="p-2"/>
                     ))}
                 </div>
                 <br></br>
@@ -59,7 +59,7 @@ const MySkills = ()=>{
                 <h4 className='p-1'>DATABASES</h4>
                 <div className="flex flex-wrap">
                     {skillsData["databases"].map((data, index)=>(
-                        <Image width={100} height={100} src={data} alt={''} className="p-2"/>
+                        <Image key={index} width={100} height={100} src={data} alt={''} className="p-2"/>
                     ))}
                 </div>
                 <br></br>
@@ -69,7 +69,7 @@ const MySkills = ()=>{
                 <h4 className='p-1'>OTHER</h4>
                 <div className="flex flex-wrap">
                     {skillsData["other"].map((data, index)=>(
-                        <Image width={100} height={100} src={data} alt={''} className="p-2"/>
+                        <Image key={index} width={100} height={100} src={data} alt={''} className="p-2"/>
                     ))}
                 </div>
             </div>
