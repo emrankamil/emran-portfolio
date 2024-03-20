@@ -21,6 +21,7 @@ export interface ProjectData {
   description: string;
   techstacks: any;
   github: string;
+  demo?: string;
 }
 
 export interface testimonyData {

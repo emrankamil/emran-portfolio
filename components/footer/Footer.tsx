@@ -25,16 +25,16 @@ export function FooterNew() {
             <Link href="mailto:emran.kamil@a2sv.org" target="_blank" rel="noopener noreferrer">
                 <MdOutlineEmail size={24} />
             </Link>
-            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/emrankamil" target="_blank" rel="noopener noreferrer">
                 <FiGithub size={24} />
             </Link>
-            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/emran-kamil" target="_blank" rel="noopener noreferrer">
                 <CiLinkedin size={24} />
             </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://t.me/emex_nord" target="_blank" rel="noopener noreferrer">
                 <PiTelegramLogo size={24} />
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://leetcode.com/emrankamil" target="_blank" rel="noopener noreferrer">
                 <SiLeetcode  size={24} />
             </Link>
         </div>

@@ -6,7 +6,7 @@ import person from '@/public/img/programmer.svg'
 
 const AboutMe = ()=> {
     return (
-    <div id="about" className="flex flex-col py-12 bg-opacity-0 text-left">
+    <div id="about" className="flex flex-col py-12 bg-opacity-0 text-left">z
         <div className="text-center " >
             <h1 className="text-purple-300 text-5xl font-bold p-4">ABOUT ME</h1>
             <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
@@ -19,10 +19,9 @@ const AboutMe = ()=> {
                     <strong className='text-purple-300'> know </strong>
                     me!
                 </div>
-                <p className="mb-4"> I am passionate <strong className='text-purple-300'>Full-Stack developer</strong> and <strong className='text-purple-300'>Computer Engineer </strong>with expertise in building
-                    web applications using Python, Django,Django rest-framework, JavaScript, React.js, Next.js, and Express.js.
+                <p className="mb-4"> I am passionate <strong className='text-purple-300'>Full-Stack developer</strong> and <strong className='text-purple-300'>Computer Engineer </strong>with expertise in Python, Django, Django rest-framework, JavaScript, React.js, Next.js, and Express.js.
                 </p>
-                <p className="mb-4"> I am commited to continuous learning. I am known for my strong <strong className='text-purple-300'>work ethics</strong>, team-oriented approach
+                <p className="mb-4">I am known for my strong <strong className='text-purple-300'>work ethics</strong>, team-oriented approach
                 and <strong className='text-purple-300'>problem-solving</strong> skills.
                 </p>
                 <p className="mb-4"> I'm open to Job opportunities where I can <strong className='text-purple-300'>contribute</strong>, <strong className='text-purple-300'>learn</strong> and <strong className='text-purple-300'>grow</strong>. 

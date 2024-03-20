@@ -28,8 +28,7 @@ const NavBar = ()=>{
     }, []);
     
     return (
-    <nav className="fixed top-0 w-full bg-opacity-15 backdrop-blur-sm z-50">
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="fixed w-full top-0 bg-opacity-15 backdrop-blur-sm z-50 mx-auto px-4 sm:px-6 lg:px-8 font-mono">
             <div className="relative flex h-16 items-center justify-between">
                 <div className={`relative flex h-16 items-center justify-between ${isMobileMenuOpen ? '' : 'sm:hidden'}`}>
                     {/* <!-- Mobile menu button--> */}
@@ -52,9 +51,9 @@ const NavBar = ()=>{
                     </button>
                 </div>
 
-                <div className="flex items-center justify-between sm:items-stretch ">
-                    <div className="">
-                        <a href="#heading"className="flex" >
+                <div className="flex items-center items-stretch ">
+                    <div className="px-2">
+                        <a href="" className="flex" aria-current="page">
                             <Logo
                             icon={
                                 <svg
@@ -78,34 +77,32 @@ const NavBar = ()=>{
                             <strong className="text-blue-gray-300 pt-1 text-2xl">EK.</strong>
                         </a>
                     </div>
+                    
                     <div className="hidden sm:ml-6 sm:block text-primary">
                         <div className="flex space-x-4">
-                            {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                             
                             <a href="#about" className=" text-white rounded-md px-1 py-2 text-lg font-medium">About Me</a>
                             <a href="#projects" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Projects</a>
                             <a href="#resume" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Resume</a>
                             <a href="#contact" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Contact Me</a>
 
-                    </div>
+                        </div>
                 </div>
             </div>
 
             </div>
-        </div>
+            {/* <!-- Mobile menu, show/hide based on menu state. --> */}
+            <div className={`${isMobileMenuOpen ? '' : 'hidden'} sm:hidden`} id="mobile-menu">
+                <div className="space-y-1 mr-8 pb-3 pt-2 mx-auto"> 
+                    <a href="" className="text-gray-300 hover:border-2 hover:text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                    <a href="#about" className="text-gray-300 hover:border-2 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About Me</a>
+                    <a href="#projects" className="text-gray-300 hover:border-2 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+                    <a href="#resume" className="text-gray-300 hover:border-2 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Resume</a>
+                    <a href="#contact" className="text-gray-300 hover:border-2 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact Me</a>
 
-        {/* <!-- Mobile menu, show/hide based on menu state. --> */}
-        <div className={`${isMobileMenuOpen ? '' : 'hidden'} sm:hidden`} id="mobile-menu">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-                <a href="#" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About Me</a>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Resume</a>
-                <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact Me</a>
-
+                </div>
             </div>
-        </div>
-    </nav>
+    </div>
 
 )
 }

@@ -10,7 +10,7 @@ import TempResume from '@/components/Resume/TempResume'
 
 export default function Home() {
   return (
-    <main className="text-mainColor text-lg w-full md:text-xl mx-auto text-left text-white  text-montserat">
+    <main className="text-mainColor text-lg w-full md:text-xl mx-auto text-left text-white font-mono">
       <div className="md:w-4/5 mx-auto px-6 ">
         <NavBar/>
         <Heading/>
