@@ -14,14 +14,15 @@ import Link from 'next/link';
 
 const Heading = ()=>{
     return( 
-        <section id="heading" className="w-full">
+        <section id="heading" className="w-full md:h-screen">
             <div className="flex flex-col pb-12 pt-20">
+                
                 <div className="flex flex-1 flex-col flex-wrap md:flex-nowrap md:flex-row items-center">
                 <div className="flex-1">
                     <div className="max-w-2xl text-white">
 
                         <div className="pb-4">
-                        <h1 className="text-6xl font-bold">
+                        <h1 className="text-6xl font-bold py-4">
                             Hi, I'am <span className="text-purple-300">Emran</span>
                             <br/>Kamil
                         </h1>
@@ -32,29 +33,30 @@ const Heading = ()=>{
                         </div>
 
                         <div className="flex space-x-4 my-4">
-                            <Link href="mailto:emran.kamil@a2sv.org" target="_blank" rel="noopener noreferrer">
+                            <a href="mailto:emran.kamil@a2sv.org">
                                 <MdOutlineEmail size={24} />
-                            </Link>
-                            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            </a>
+                            <a href="https://instagram.com">
                                 <FiGithub size={24} />
-                            </Link>
-                            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            </a>
+                            <a href="https://facebook.com">
                                 <CiLinkedin size={24} />
-                            </Link>
-                            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            </a>
+                            <a href="https://twitter.com">
                                 <PiTelegramLogo size={24} />
-                            </Link>
-                            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            </a>
+                            <a href="https://linkedin.com">
                                 <SiLeetcode  size={24} />
-                            </Link>
+                            </a>
                         </div>
+                        
 
                         <div className="pb-8">
-                            <Link href={'#contact'}>
+                            <a href={'#contact'}>
                                 <div className='bg-purple-300 hover:bg-purple-200 rounded-none font-bold text-black px-4 py-2 inline-block min-w-min'>
                                     Hire Me
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     </div>  

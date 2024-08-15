@@ -1,6 +1,7 @@
 'use client'
 import {Logo} from './Logo';
 import Image from 'next/image'
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 const NavBar = ()=>{
@@ -86,6 +87,7 @@ const NavBar = ()=>{
                             <a href="#projects" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Projects</a>
                             <a href="#resume" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Resume</a>
                             <a href="#contact" className=" text-white rounded-md px-1 py-2 text-lg font-medium">Contact Me</a>
+                        <Link href={'#contact'} className='w-16 h-16'>Hello</Link>
 
                     </div>
                 </div>
