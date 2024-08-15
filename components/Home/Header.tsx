@@ -47,7 +47,6 @@ const Header = ()=>{
                             <a href="https://linkedin.com">
                                 <SiLeetcode  size={24} />
                             </a>
-                            <a href="https://www.google.com" target="_blank">Go to Google</a>
 
                         </div>
             

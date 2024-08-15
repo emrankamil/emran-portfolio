@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 // import { Nunito } from 'next/font/google'
-import {Providers} from "./Providers";
 import './globals.css'
 
 import local from 'next/font/local';
@@ -33,9 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserat.variable} ${background}`}>
         <div className="bg-[url('../public/img/full_background.jpg')] bg-cover bg-left">
-          <Providers>
           {children}
-          </Providers>
         </div> 
         </body>
     </html>

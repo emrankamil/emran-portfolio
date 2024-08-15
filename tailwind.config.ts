@@ -36,7 +36,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        montserat: ['Montserat', 'sans-serif'],
+        montserat: ['Averia Sans Libre', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
