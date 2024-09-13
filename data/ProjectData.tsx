@@ -3,6 +3,22 @@ import {ProjectData} from '@/types/types'
 const projectData: ProjectData[] = [
   {
     id: 1,
+    title: "Adot Website Website",
+    background: "/projects/adot_image.png",
+    description: "The best maternity companion for mothers and mothers-to-be.",
+    techstacks: ["NestJs", "NextJs", "Tailwind"],
+    github: "https://adot.life/en",
+  },
+  {
+    id: 2,
+    title: "Afrochat Website Website",
+    background: "/projects/afrochat_image.png",
+    description: "Generative AI for Africans to chat with.",
+    techstacks: ["NestJs", "NextJs", "Websocket", "Saas"],
+    github: "https://afrochat.app/",
+  },
+  {
+    id: 3,
     title: "4K-Labs Website",
     background: "/projects/4klabsScreenshot.png",
     description: "A complete and innovative website for 4K-Labs.",
@@ -10,7 +26,7 @@ const projectData: ProjectData[] = [
     github: "https://github.com/4K-Labs/4k-website",
   },
   {
-    id: 2,
+    id: 4,
     title: "Class Scheduling App",
     background: "/projects/class_scheduling.png",
     description:
@@ -19,7 +35,7 @@ const projectData: ProjectData[] = [
     github: "https://github.com/emrankamil/class-scheduling-app",
   },
   {
-    id: 3,
+    id: 5,
     title: "X-Plore Tunes",
     background: "/projects/XploreTunes.png",
     description:
@@ -28,7 +44,7 @@ const projectData: ProjectData[] = [
     github: "https://github.com/Bereket3/X-plore-Tunes",
   },
   {
-    id: 4,
+    id: 6,
     title: "React Dashboard App",
     background: "/projects/reactdashboard.png",
     description:
@@ -37,7 +53,7 @@ const projectData: ProjectData[] = [
     github: "https://github.com/emrankamil/react-dashboard",
   },
   {
-    id: 5,
+    id: 7,
     title: "Python Snake Game",
     background: "/projects/Image-game over.jpg",
     description:
@@ -46,7 +62,7 @@ const projectData: ProjectData[] = [
     github: "https://github.com/emrankamil/snake-game_python",
   },
   {
-    id: 6,
+    id: 8,
     title: "Near Coffee Website",
     background: "/projects/NearCoffee.png",
     description: "A promotion Website to a new Coffee App",
@@ -54,7 +70,7 @@ const projectData: ProjectData[] = [
     github: "https://github.com/emrankamil/Near-coffee-website",
   },
   {
-    id: 7,
+    id: 9,
     title: "brhome Website",
     background: "/projects/brhome.png",
     description:

@@ -23,10 +23,31 @@ export default function PorjectCard({ project }: { project: ProjectData }) {
                 <h1 className="font-serif text-2xl font-bold text-white shadow-xl">{project.title}</h1>
               </div>
               <a href={project.github} className="p-0 m-0">
-                <Button variant="gradient" placeholder={undefined} className="flex items-center gap-2 text-xs bg-black p-1 rounded-sm" onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                  <BsGithub className=""/>
-                  Github
-                </Button>
+                {project.id > 2 ? (
+                  
+                    <Button
+                      variant="gradient"
+                      placeholder={undefined}
+                      className="flex items-center gap-2 text-xs bg-black p-1 rounded-sm"
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    >
+                      <BsGithub className="" />
+                      Github
+                    </Button>
+                ) : (
+                  
+                    <Button
+                      variant="gradient"
+                      placeholder={undefined}
+                      className="flex items-center gap-2 text-xs bg-black p-1 rounded-sm"
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    >
+                      <FiLink className="" />
+                      Website
+                    </Button>
+                )}
                 </a> 
             </div>
             <h1 className="text-sm text-gray-100 ">{project.description}</h1>          

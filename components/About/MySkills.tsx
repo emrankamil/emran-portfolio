@@ -8,7 +8,7 @@ const MySkills = ()=>{
                <h1 className="text-4xl font-bold py-6 text-left">My <strong className="text-purple-300 font-semibold">Skills</strong></h1>
                 <p>I am passionate and proficient in the following languages and modern architectures.</p>
             </div>
-            <br></br>
+            <br />
             <div>
                 <h4 className='p-1'>LANGUANGE AND TOOLS</h4>
                 <div className="flex flex-wrap">

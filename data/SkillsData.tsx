@@ -8,12 +8,12 @@ const skillsData={
       "/skills/typescript-logo-svgrepo-com.svg"
     ],
     "frameworks": [
+      "/skills/nestjs-svgrepo-com.svg",
+      "/skills/nextjs-svgrepo-com (1).svg",
       "/skills/django-icon-svgrepo-com.svg",
       "/skills/django-rest.svg",
       "/skills/react-svgrepo-com.svg",
-      "/skills/nextjs-svgrepo-com (1).svg",
       "/skills/tailwind-svgrepo-com.svg",
-      "/skills/nestjs-svgrepo-com.svg",
       "/skills/express-svgrepo-com (1).svg",
     ],
     "databases": [
