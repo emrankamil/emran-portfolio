@@ -1,20 +1,21 @@
-import {ProjectData} from '@/types/types'
+import { ProjectData } from "@/types/types";
 
 const projectData: ProjectData[] = [
   {
     id: 1,
-    title: "Adot Website Website",
-    background: "/projects/adot_image.png",
-    description: "The best maternity companion for mothers and mothers-to-be.",
-    techstacks: ["NestJs", "NextJs", "Tailwind"],
-    github: "https://adot.life/en",
+    title: "Abduselam Arabian Mejlis - website",
+    background: "/projects/abduselam_image.png",
+    description:
+      "An Eccomerce website curated for my client Abduselam Arabian Mejlis.",
+    techstacks: ["Django", "DRF", "Tailwind"],
+    github: "https://www.abduselam-arabianmejlis.com/",
   },
   {
     id: 2,
     title: "Afrochat Website Website",
     background: "/projects/afrochat_image.png",
     description: "Generative AI for Africans to chat with.",
-    techstacks: ["NestJs", "NextJs", "Websocket", "Saas"],
+    techstacks: ["Flask", "NextJs", "Websocket", "Saas"],
     github: "https://afrochat.app/",
   },
   {
@@ -22,7 +23,7 @@ const projectData: ProjectData[] = [
     title: "4K-Labs Website",
     background: "/projects/4klabsScreenshot.png",
     description: "A complete and innovative website for 4K-Labs.",
-    techstacks: ["React", "NextJs", "Tailwind"],
+    techstacks: ["Flask", "NextJs", "Tailwind"],
     github: "https://github.com/4K-Labs/4k-website",
   },
   {
@@ -66,7 +67,7 @@ const projectData: ProjectData[] = [
     title: "Near Coffee Website",
     background: "/projects/NearCoffee.png",
     description: "A promotion Website to a new Coffee App",
-    techstacks: ["React", "NextJs", "Expres Js"],
+    techstacks: ["React", "NextJs", "Flask"],
     github: "https://github.com/emrankamil/Near-coffee-website",
   },
   {
@@ -75,10 +76,9 @@ const projectData: ProjectData[] = [
     background: "/projects/brhome.png",
     description:
       "An elegant company website for a client, showcasing their work and services.",
-    techstacks: ["React", "Nest js", "Next js"],
+    techstacks: ["React", "Django", "Next js"],
     github: "https://github.com/emrankamil/gallery_app",
   },
 ];
 
 export default projectData;
-
