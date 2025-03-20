@@ -23,28 +23,19 @@ const AboutMe = () => {
           </div>
           <p className="mb-4">
             {" "}
-            I am passionate{" "}
-            <strong className="text-purple-300">
-              Full-Stack developer
-            </strong>{" "}
-            and <strong className="text-purple-300">Computer Engineer </strong>
-            with expertise in Python, Django, Django rest-framework, JavaScript,
+            I am passionate Full-Stack developer and Computer Engineer with
+            expertise in Typescript, Node, Nest, Django, Django rest-framework,
             React.js, Next.js, and Express.js.
           </p>
           <p className="mb-4">
-            I am known for my strong{" "}
-            <strong className="text-purple-300">work ethics</strong>,
-            team-oriented approach and{" "}
-            <strong className="text-purple-300">problem-solving</strong> skills.
+            I am known for my strong work ethics, team-oriented approach and
+            problem-solving skills.
           </p>
           <p className="mb-4">
             {" "}
-            I'm open to Job opportunities where I can{" "}
-            <strong className="text-purple-300">contribute</strong>,{" "}
-            <strong className="text-purple-300">learn</strong> and{" "}
-            <strong className="text-purple-300">grow</strong>. If you have a
-            good opportunity that matches my skills and experience then don't
-            hesitate to contact me.
+            I'm open to Job opportunities where I can contribute learn and grow
+            If you have a good opportunity that matches my skills and experience
+            then don't hesitate to contact me.
           </p>
         </div>
         <div className=" basis-1/2 my-auto ">

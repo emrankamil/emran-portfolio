@@ -1,11 +1,9 @@
 const skillsData = {
   languages: [
-    "/skills/css-3.svg",
-    "/skills/html-svgrepo-com.svg",
-    "/skills/javascript-logo-svgrepo-com.svg",
+    "/skills/typescript-logo-svgrepo-com.svg",
+    "/skills/go-svgrepo-com.svg",
     "/skills/python-svgrepo-com.svg",
     "/skills/java-svgrepo-com.svg",
-    "/skills/typescript-logo-svgrepo-com.svg",
   ],
   frameworks: [
     "/skills/flask-svgrepo-com.svg",

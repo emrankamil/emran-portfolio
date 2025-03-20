@@ -8,6 +8,7 @@ import Footer from "@/components/footer/Footer";
 import Resume from "@/components/Resume/Resume";
 import TempResume from "@/components/Resume/TempResume";
 import Header from "@/components/Home/Header";
+import Experience from "@/components/Experience/exp";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Header />
         {/* <SocialLinks/> */}
         <AboutMe />
+        <Experience />
         <Project />
         <TempResume />
         {/* <Resume/> */}

@@ -11,14 +11,6 @@ const projectData: ProjectData[] = [
     github: "https://www.abduselam-arabianmejlis.com/",
   },
   {
-    id: 2,
-    title: "Afrochat Website Website",
-    background: "/projects/afrochat_image.png",
-    description: "Generative AI for Africans to chat with.",
-    techstacks: ["Flask", "NextJs", "Websocket", "Saas"],
-    github: "https://afrochat.app/",
-  },
-  {
     id: 3,
     title: "4K-Labs Website",
     background: "/projects/4klabsScreenshot.png",
