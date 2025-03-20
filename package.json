@@ -33,7 +33,7 @@
     "react-pdf": "^7.7.0",
     "react-router-dom": "^6.22.0",
     "react-tsparticles": "^2.12.2",
-    "rizzui": "^1.0.1",
+    "rizzui": "^0.8.4",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "typewriter-effect": "^2.21.0"
